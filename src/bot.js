@@ -38,10 +38,10 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 const fs = require('fs');
 
+const Response_sheet_id = 'your reference ID';
 
-const Response_sheet_id = '10790b-qbTqnda9KWUFGn5QP1zYXxrj4EHq12VzgLLNM';
+const Response_sheet_id2 = 'your reference ID';
 
-const Response_sheet_id2 = '1u4RHUS1MbiQ7_y6qz1inrDc2xpNw_01ye7I3MPcRumg';
 
 const doc = new GoogleSpreadsheet(Response_sheet_id)
 const doc2 = new GoogleSpreadsheet(Response_sheet_id2)
@@ -70,8 +70,6 @@ for(let index=0;index<rows.length;index++) {
 };
 };
 
-//add row to the sheet1
-//LINK : "https://docs.google.com/spreadsheets/d/10790b-qbTqnda9KWUFGn5QP1zYXxrj4EHq12VzgLLNM/edit?usp=sharing"
 
 const addRow = async (rows) => {
     
@@ -91,8 +89,6 @@ const addRow = async (rows) => {
     };
     };
 
-// add row to the sheet2
-//LINK : "https://docs.google.com/spreadsheets/d/1u4RHUS1MbiQ7_y6qz1inrDc2xpNw_01ye7I3MPcRumg/edit?usp=sharing"
 
 const addRow2 = async (rows) => {
     
